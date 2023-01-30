@@ -1,0 +1,35 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "wordpress",
+  "forwardPorts": [8080],
+  "workspaceFolder": "/var/www/html/",
+  "postCreateCommand": "/var/www/html/.devcontainer/setup.sh",
+  "remoteUser": "www-data",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mrorz.language-gettext",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "christian-kohler.npm-intellisense",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "k--kato.intellij-idea-keybindings",
+        "akamud.vscode-javascript-snippet-pack",
+        "dbaeumer.vscode-eslint",
+        "ecmel.vscode-html-css",
+        "mohd-akram.vscode-html-format",
+        "xyz.local-history",
+        "bmewburn.vscode-intelephense-client",
+        "stylelint.vscode-stylelint"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "prettier.resolveGlobalModules": true
+      }
+    }
+  }
+}
